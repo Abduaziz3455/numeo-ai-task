@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+tortoise-orm[asyncpg]
+aerich
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-genai
+chromadb
+python-dotenv
+pydantic
+httpx
+email-validator
