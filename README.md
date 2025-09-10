@@ -139,27 +139,19 @@ curl http://localhost:8000/auth
 
 # Visit the returned auth_url in your browser
 # Complete OAuth authorization
-# Email processing starts automatically
+# Email processing starts automatically!!!
 ```
 
-### 2. **Add Sample Orders**
-```bash
-curl -X POST http://localhost:8000/orders \
-  -H "Content-Type: application/json" \
-  -d '{
-    "order_id": "ORD123",
-    "customer_email": "customer@example.com",
-    "amount": 99.99
-  }'
-```
-
-### 3. **Monitor System**
+### 2. **Monitor System**
 ```bash
 # Check system statistics
 curl http://localhost:8000/stats
 
 # View processed emails
 curl http://localhost:8000/users
+
+# View extracted orders
+curl http://localhost:8000/orders
 ```
 
 ---
